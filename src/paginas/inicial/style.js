@@ -43,8 +43,11 @@ p{
 `
 export const Conteudo = styled.div`
 margin: 50px auto;
-
+gap: 50px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+img, video{
+  width: 500px;
+}
 `

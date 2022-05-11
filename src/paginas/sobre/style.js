@@ -61,7 +61,9 @@ a{
         text-shadow: 0 0 0.3em #42f0a7;
     }
 }
-
+:hover{
+  background-color: #000000dc;
+}
 `
 export const SobreCard = styled.div`
 width: 750px;
@@ -80,6 +82,9 @@ h3{
   text-shadow: -1px 0 black, 0 1px black,
       1px 0 black, 0 -1px black;
       letter-spacing: 3px;
+}
+:hover{
+  background-color: #ffffffdc;
 }
 `
 export const ListaSobre = styled.div`

@@ -61,6 +61,9 @@ a{
         text-shadow: 0 0 0.3em #42f0a7;
     }
 }
+:hover{
+  background-color: #000000dc;
+}
 `
 export const VoltarAoTopo = styled.a`
 position: fixed;
@@ -114,5 +117,8 @@ div{
       cursor: pointer;
     }
   }
+}
+:hover{
+  background-color: #ffffffdc;
 }
 `

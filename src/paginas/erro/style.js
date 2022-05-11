@@ -66,12 +66,18 @@ background-color: #00000075;
 color: white;
 padding: 10px;
 text-align: justify;
+:hover{
+  background-color: #000000dc;
+}
 `
 export const TextoBranco = styled.div`
 background-color: #ffffff75;
 color: black;
 padding: 10px;
 text-align: justify;
+:hover{
+  background-color: #ffffffdc;
+}
 `
 export const VoltarAoTopo = styled.a`
 position: fixed;
