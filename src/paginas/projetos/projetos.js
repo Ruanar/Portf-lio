@@ -8,6 +8,7 @@ import Filmes02 from '../../img/filmes02.png'
 import Labekut01 from '../../img/labekut01.png'
 import Labekut02 from '../../img/labekut02.png'
 import Labekut03 from '../../img/labekut03.png'
+import DaVelha from '../../img/daVelha.png'
 
 export default function PaginaDeProjetos() {
     const history = useHistory()
@@ -92,7 +93,7 @@ export default function PaginaDeProjetos() {
 
                 <div>
                     <a href="https://github.com/Ruanar/filmes-populares" target='_blank'><button>GitHub</button></a>
-                    <a href="https://ruana-filmes.surge.sh/" target='_blank'><button>Filmes Populares</button></a>
+                    <a href="https://ruana-filmes.surge.sh/" target='_blank'><button>Filmes</button></a>
                 </div>
             </CardProjeto>
         )
@@ -124,6 +125,27 @@ export default function PaginaDeProjetos() {
             </CardProjeto>
         )
     }
+    function JogoDaVelha() {
+        return (
+            <CardProjeto id="Jogo">
+                <h3>Jogo da Velha - Front end</h3>
+                <img src={DaVelha} />
+                <div>
+                    
+                    <ion-icon name="logo-html5"></ion-icon>
+                    <ion-icon name="logo-javascript"></ion-icon>
+                    <ion-icon name="logo-css3"></ion-icon>
+                </div>
+                <h4>Sobre o projeto</h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Versão em HTML, CSS e Javascript do tradicional Jogo da Velha,
+                    em inglês Tic Tac Toe. Foi desenvolvido inspirado pelo canal do YouTube Código Fonte TV.</p>
+                <div>
+                    <a href="https://github.com/Ruanar/JogoDaVelha" target='_blank'><button>GitHub</button></a>
+                    <a href="https://davelha.surge.sh/" target='_blank'><button>Jogo da Velha</button></a>
+                </div>
+            </CardProjeto>
+        )
+    }
     return (
         <ProjetosFundo>
             <CabecalhoPagina>
@@ -147,6 +169,9 @@ export default function PaginaDeProjetos() {
                         <a href='#Labekut'>
                             <li>Labekut - Front End</li>
                         </a>
+                        <a href='#Jogo'>
+                            <li>Jogo da Velha - Front End</li>
+                        </a>
                     </ul>
                 </MenuProjetos>
                 <VoltarAoTopo href="#"><ion-icon name="arrow-up-sharp"></ion-icon></VoltarAoTopo>
@@ -155,6 +180,7 @@ export default function PaginaDeProjetos() {
                     {Pizzeria()}
                     {Filmes()}
                     {Labekut()}
+                    {JogoDaVelha()}
                 </ListaProjetos>
             </Conteudo>
         </ProjetosFundo>
