@@ -2,7 +2,7 @@ import { useHistory } from "react-router-dom";
 import { irParaProjetos, irParaSobre } from "../../router/cordinator";
 import { CabecalhoPagina, Links, InicialFundo, Contatos, Conteudo } from "./style";
 import real108 from '../../video/Realeza108.mp4'
-import minhaFoto from '../../img/eu.JPG'
+import minhaFoto from '../../img/eu.jpg'
 
 export default function PaginaInicial() {
     const history = useHistory()
